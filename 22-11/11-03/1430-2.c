@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(){
+int main(){ //overtime 5s (limit 4s)
     int one, two;
 
     scanf("%d", &one);
@@ -13,18 +13,18 @@ int main(){
     for(int i=0; i<two;i++)
         scanf("%d", &arr2[i]);
 
-    int a,b,c=0;
-    for(a=0; a<one; a++){
-        for(b=0; b<two; b++){
-            c=0;
-            if(arr1[a] == arr2[b]){
-                printf("1 ");
+    int a,b,c;
+    for(a=0; a<two; a++){
+        c=0;
+        for(b=0; b<one; b++){
+            if(arr1[b] == arr2[a]){
                 c++;
+                printf("1 ");
+                break;
             }
         }
-        if(c != 1){
+        if(c!=1 && two != a)
             printf("0 ");
-        }
     }
     return 0;
 }
