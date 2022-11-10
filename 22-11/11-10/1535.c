@@ -10,7 +10,7 @@ int f(){
             king_num = i;
         }
     }
-    return king_num+1;
+    return king_num+1; 
 }
 
 int main()
