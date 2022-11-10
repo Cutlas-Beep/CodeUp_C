@@ -1,4 +1,6 @@
-#include <stdio.h>{
-    int* a;
+#include <stdio.h>
 
+int main(){
+    int a=3;
+    printf("%d", hi);
 }
