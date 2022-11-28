@@ -2,13 +2,13 @@
 
 int n;
 
-long long int f(int a){
+long long int f(int a){ //재귀함수로 다시 풀기
     long long int ans = 1;
     for(int i=1; i<=a; i++){
         ans = ans * i;
     }
     return ans;
-}
+    }
 
 int main(){
     scanf("%d", &n);
